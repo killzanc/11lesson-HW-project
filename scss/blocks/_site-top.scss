@@ -1,0 +1,25 @@
+.site-top {
+  padding-top: 73px;
+  background-color: #014e56;
+  background-image: url("./../image/disk-red.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: bottom right -100px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  background-image: url("./../image/disk-red@2x.png");
+}
+
+@media screen and (max-width: 650px) {
+  .site-top {
+    padding-top: 48px;
+  }
+}

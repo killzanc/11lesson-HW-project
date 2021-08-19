@@ -1,0 +1,13 @@
+@mixin link-style($color) {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color;
+  text-decoration: none;
+}
+
+@mixin border($color) {
+  border-radius: $bdrs;
+  border: 2px solid $color;
+  padding: 9px 32px;
+}

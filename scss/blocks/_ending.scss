@@ -1,0 +1,93 @@
+.ending{
+    background-image: url(./../image/disk-dark.png);
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    background-color: #012F34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &__title{
+        font-weight: 700;
+        color: #FFFFFF;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 151px;    
+    }
+
+    &__list-item{
+        margin: 0 40px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .ending{
+        position: relative;
+        background-position-y:-90%;
+        background-size: 200px 200px;
+        padding: 100px 40px;
+        padding-bottom: 0;
+        &__content-wrapper{
+            max-width: 689px;
+            margin-bottom: 107px;
+        }
+        &__list{
+            margin-bottom: 0;
+        }
+        &__title{
+            margin: 0;
+            margin-bottom: 48px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__list-item{
+            margin: 0 26px ;
+        }
+        &__item-img{
+            width: 115px;
+            height: 17px;
+        }
+    }
+}
+@media only screen and (max-width: 375px){
+    .ending{
+        background-position-y: -20%;
+        background-position-x: -57%;
+        flex-direction: column;
+        justify-content: center; 
+
+        &__content-wrapper{
+            max-width: 372px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__list{
+            flex-direction: column;
+        }
+        &__list-item{
+            margin: 29px 0;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+            white-space: nowrap;
+        }
+
+        &__item-img{
+            max-width: 162px;
+            
+        }
+    }
+} 

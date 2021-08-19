@@ -1,0 +1,43 @@
+.ready{
+    background-color: #F67E7E;
+    display: flex;
+    justify-content: center;
+    padding: 76px 0;
+    &__info{
+        width: 917px;
+        margin: 0 260px;
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #012F34;
+    }
+    &__link{
+        color: #012F34;
+        border-color: #012F34;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .ready{
+        max-width: 768px;
+        
+        &__info{
+            justify-content: space-between;
+            margin: 0 97px;
+        }
+
+        &__title{
+            max-width: 336px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+}
